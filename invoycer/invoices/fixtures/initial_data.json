@@ -1,0 +1,88 @@
+[
+	{
+		"model": "invoices.organization",
+		"pk": 1,
+		"fields": {
+			"name": "ES Computer Training",
+			"defaultrate": 50.00
+		}
+	},
+	{
+		"model": "invoices.organization",
+		"pk": 2,
+		"fields": {
+			"name": "Toronto General Hospital",
+			"defaultrate": 50.00
+		}
+	},
+	{
+		"model": "invoices.contact",
+		"pk": 1,
+		"fields": {
+			"firstname": "Andrew",
+			"lastname": "Leroux",
+			"salutation": "Mr.",
+			"email": "andrew@escomputertraining.com",
+			"phone": "9058301857"
+		}
+	},
+	{
+		"model": "invoices.contact",
+		"pk": 2,
+		"fields": {
+			"firstname": "Wayne",
+			"lastname": "Johnston",
+			"salutation": "Dr.",
+			"email": "wayne.johnston@utoronto.ca",
+			"phone": "4162584343"
+		}
+	},
+	{
+		"model": "invoices.client",
+		"pk": 1,
+		"fields": {
+			"organization" : 1,
+			"contact" : 1
+		}
+	},
+	{
+		"model": "invoices.client",
+		"pk": 2,
+		"fields": {
+			"organization" : 2,
+			"contact" : 2
+		}
+	},
+	{
+		"model": "invoices.project",
+		"pk": 1,
+		"fields": {
+			"client": 1,
+			"name": "effectiveconnection.com"
+		}
+	},
+	{
+		"model": "invoices.project",
+		"pk": 2,
+		"fields": {
+			"client": 2,
+			"name": "Infobook"
+		}
+	},
+	{
+		"model": "invoices.invoice",
+		"pk": 1,
+		"fields": {
+			"client": 1,
+			"datecreated": "1111-01-01 00:00:00"
+		}
+	},
+	{
+		"model": "invoices.invoice",
+		"pk": 1,
+		"fields": {
+			"client": 2,
+			"datecreated": "2222-02-02 00:00:00"
+		}
+	}
+]
